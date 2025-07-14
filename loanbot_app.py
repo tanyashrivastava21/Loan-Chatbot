@@ -17,7 +17,7 @@ import google.generativeai as genai
 
 # Load Gemini API Key from secrets
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-model = genai.GenerativeModel(model_name="models/gemini-1.5-pro-latest")
+model = genai.GenerativeModel(model_name="models/gemini-1.5-flash-latest")
 
 # Load and clean the dataset
 @st.cache_resource
